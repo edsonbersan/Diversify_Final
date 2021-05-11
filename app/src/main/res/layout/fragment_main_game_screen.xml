@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScreenFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainGameScreenFragment">
+
+    <Button
+        android:id="@+id/assetsSpendingsButton"
+        android:layout_width="181dp"
+        android:layout_height="72dp"
+        android:text="Assets"
+        app:layout_constraintBottom_toTopOf="@+id/investButton"
+        app:layout_constraintEnd_toEndOf="@+id/investButton"
+        app:layout_constraintStart_toStartOf="@+id/investButton"
+        app:layout_constraintTop_toBottomOf="@+id/graphImageView" />
+
+    <Button
+        android:id="@+id/investButton"
+        android:layout_width="181dp"
+        android:layout_height="72dp"
+        android:text="Invest!"
+        app:layout_constraintBottom_toTopOf="@+id/workButton"
+        app:layout_constraintEnd_toEndOf="@+id/workButton"
+        app:layout_constraintStart_toStartOf="@+id/workButton"
+        app:layout_constraintTop_toBottomOf="@+id/assetsSpendingsButton" />
+
+    <Button
+        android:id="@+id/workButton"
+        android:layout_width="181dp"
+        android:layout_height="72dp"
+        android:text="Work!"
+        app:layout_constraintBottom_toTopOf="@+id/advanceTurnButton"
+        app:layout_constraintEnd_toEndOf="@+id/advanceTurnButton"
+        app:layout_constraintStart_toStartOf="@+id/advanceTurnButton"
+        app:layout_constraintTop_toBottomOf="@+id/investButton" />
+
+    <Button
+        android:id="@+id/advanceTurnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:text="Advance Turn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assetValue" />
+
+    <FrameLayout
+        android:id="@+id/graphImageView"
+        android:layout_width="209dp"
+        android:layout_height="204dp"
+        app:layout_constraintBottom_toTopOf="@+id/assetsSpendingsButton"
+        app:layout_constraintEnd_toEndOf="@+id/assetsSpendingsButton"
+        app:layout_constraintStart_toStartOf="@+id/assetsSpendingsButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/netWorth"
+        android:layout_width="300dp"
+        android:layout_height="113dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/graphImageView" />
+
+    <TextView
+        android:id="@+id/assetValue"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginBottom="392dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/advanceTurnButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

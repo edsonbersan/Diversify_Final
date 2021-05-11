@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SpendingsFragment">
+
+<!-- TODO: Update blank fragment layout -->
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Spendings Fragment" />
+
+<ScrollView
+    android:id="@+id/Spendings_scrollView"
+    android:layout_width="359dp"
+    android:layout_height="500dp"
+    android:background="#25FB0000"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.457"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:id="@+id/Spendings_LinearLayoutInsideScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</ScrollView>
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="SPENDINGS"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Spendings_scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732" />
+
+<Button
+    android:id="@+id/Spendings_assetsButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:text="Assets"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.434"
+    app:layout_constraintStart_toEndOf="@+id/Spendings_mainScreenButton"
+    app:layout_constraintTop_toTopOf="@+id/Spendings_mainScreenButton" />
+
+<Button
+    android:id="@+id/Spendings_mainScreenButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="28dp"
+    android:text="Main Screen"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/Spendings_scrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
